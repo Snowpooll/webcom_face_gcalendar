@@ -35,7 +35,8 @@ git clone https://huggingface.co/elyza/Llama-3-ELYZA-JP-8B-GGUF.git
 `vim Modelfile`
 でファイルを作成
 
-中身を```
+中身を
+```
 FROM ./Llama-3-ELYZA-JP-8B-q4_k_m.gguf
 TEMPLATE """{{ if .System }}<|start_header_id|>system<|end_header_id|>
 
