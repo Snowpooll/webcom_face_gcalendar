@@ -63,8 +63,9 @@ calendar_utils.py
 でDocker VoicevoxマシンのURLを指定していますので  
 環境に応じて変更してください  
 
-音声の作成に voicevox の docker が必要になります
-`docker pull voicevox/voicevox_engine:cpu-ubuntu20.04-latest` で取得しています  
+音声の作成に voicevox の docker が必要になります  
+`docker pull voicevox/voicevox_engine:cpu-ubuntu20.04-latest`   
+で取得しています  
 
 動作させるには  
 バックグランドでの起動で -d オプションをつけて
