@@ -68,6 +68,6 @@ calendar_utils.py
 で取得しています  
 
 動作させるには  
-バックグランドでの起動で -d オプションをつけて
- `docker run -d -p '192.168.1.69:50021:50021' voicevox/voicevox_engine:cpu-ubuntu20.04-latest`
+バックグランドでの起動で -d オプションをつけて  
+ `docker run -d -p '192.168.1.69:50021:50021' voicevox/voicevox_engine:cpu-ubuntu20.04-latest`  
  というように起動させます IPアドレス部分はご自身のマシンのIPに変えてください
