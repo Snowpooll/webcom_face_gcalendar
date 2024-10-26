@@ -5,7 +5,9 @@ Perform face identification with OpenCV When the face of the registered person i
 ## 動作環境
 M1 MacbookAir 16GB で動作しています
 
-Gmail と Google Calendar を操作するためAPIとtoken.jsonが必要になります https://developers.google.com/gmail/api/quickstart/python?hl=ja を参考にAPIを使用可能にし、token.jsonを取得し同一ディレクトリに設置してください
+Gmail と Google Calendar を操作するためAPIとtoken.jsonが必要になります  
+https://developers.google.com/gmail/api/quickstart/python?hl=ja  
+を参考にAPIを使用可能にし、token.jsonを取得し同一ディレクトリに設置してください
 
 
 使用にあたり 
@@ -26,7 +28,8 @@ Ollamaでelyza:jp8b’を使用します
 ```
 arch -arm64 brew install git-lfs  
 git lfs install  
-git clone https://huggingface.co/elyza/Llama-3-ELYZA-JP-8B-GGUF.git```
+git clone https://huggingface.co/elyza/Llama-3-ELYZA-JP-8B-GGUF.git
+```
 でダウンロード
 
 `vim Modelfile`
@@ -55,11 +58,14 @@ Successとなったら
 
 これで Ollamaでelyza:jp8bが動作します  
 
-calendar_utils.py
-でDocker VoicevoxマシンのURLを指定していますので
-環境に応じて変更してください
+calendar_utils.py  
+でDocker VoicevoxマシンのURLを指定していますので  
+環境に応じて変更してください  
 
-音声の作成に voicevox の docker が必要になります `docker pull voicevox/voicevox_engine:cpu-ubuntu20.04-latest` で取得しています
+音声の作成に voicevox の docker が必要になります
+`docker pull voicevox/voicevox_engine:cpu-ubuntu20.04-latest` で取得しています  
 
-動作させるには
-バックグランドでの起動で -d オプションをつけて `docker run -d -p '192.168.1.69:50021:50021' voicevox/voicevox_engine:cpu-ubuntu20.04-latest` というように起動させます IPアドレス部分はご自身のマシンのIPに変えてください
+動作させるには  
+バックグランドでの起動で -d オプションをつけて
+ `docker run -d -p '192.168.1.69:50021:50021' voicevox/voicevox_engine:cpu-ubuntu20.04-latest`
+ というように起動させます IPアドレス部分はご自身のマシンのIPに変えてください
