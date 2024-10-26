@@ -1,6 +1,9 @@
 # webcom_face_gcalendar
-Perform face identification with OpenCV When the face of the registered person is recognized Get this week's schedule using Google calendar API Generate and read audio with Docker's voicevox
-
+Perform face identification with OpenCV When the face of the registered person is recognized Get this week's schedule using Google calendar API Generate and read audio with Docker's voicevox  
+OpenCVで顔の識別を行い
+登録した人物の顔を認識したら
+Google calendar API で今週の予定を取得し
+Docker の voicevox で音声を生成し読み上げします
 
 ## 動作環境
 M1 MacbookAir 16GB で動作しています
